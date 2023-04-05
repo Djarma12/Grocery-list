@@ -1,0 +1,52 @@
+.container {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="text"],
+input[type="number"] {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#grocery-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.btn {
+  display: block;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-inline: auto;
+}
+
+/* .error {
+  color: red;
+} */
+
+/* .success {
+  color: green;
+} */
+
+.edit-input {
+  margin-right: 10px;
+}
+
+.edit-btn {
+  background-color: #ffa500;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background-color: #ff0000;
+  cursor: pointer;
+}
