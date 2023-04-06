@@ -5,16 +5,39 @@
   align-items: center;
 }
 
-input[type="text"],
-input[type="number"] {
-  display: block;
+#grocery-form input {
   margin-bottom: 10px;
+}
+
+input {
+  display: block;
+
+  border: 2px solid #ffa500;
+  border-radius: 3px;
+  outline: none;
+}
+
+input:focus {
+  border: 2px solid #ff7300;
 }
 
 #grocery-list {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
+  counter-reset: list-counter 0;
+}
+
+#grocery-list li {
+  display: grid;
+  grid-template-columns: min-content 1.5fr 0.8fr 1.4fr auto min-content;
+  justify-items: center;
+  gap: 1rem;
+  counter-increment: list-counter;
+}
+
+#grocery-list li::before {
+  content: counter(list-counter) ". ";
 }
 
 .btn {
@@ -26,23 +49,20 @@ input[type="number"] {
   border-radius: 5px;
   cursor: pointer;
   margin-inline: auto;
+  margin-top: 10px;
 }
-
-/* .error {
-  color: red;
-} */
-
-/* .success {
-  color: green;
-} */
 
 .edit-input {
   margin-right: 10px;
 }
 
+.save-btn {
+  background-color: #ffa500;
+  cursor: pointer;
+}
+
 .edit-btn {
   background-color: #ffa500;
-  margin-right: 10px;
   cursor: pointer;
 }
 
