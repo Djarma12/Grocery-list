@@ -1,6 +1,23 @@
+# Grocery list
+
+This task involves creating a grocery list that allows users to add items, with options to edit, delete, and clear the list. The list is displayed in two containers, with one container for submitting items and the other for displaying the list. The user can add the name, quantity, and price of each item, and the budget can be calculated by subtracting the total cost of the items from the main budget. The project also includes validation to prevent the submission of blank items and to alert users of successful submissions.
+
+You can view the project live here:
+[Grocery list](https://grocerylist-dusan-project.netlify.app/)
+
+---
+
+## Description
+
 Grocery list with budget calculations
 
 The objective of this task  is to create a grocery list that accepts an item and also saves it to local storage. There will be two containers, one for submitting an item, and the other will display the list of entries of the submitted items and a button for clearing the items of the list at the bottom.
+
+#### Technologies
+
+- HTML
+- CSS
+- JS
 
 Notes:
 
