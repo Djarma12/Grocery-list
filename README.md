@@ -39,18 +39,20 @@ Each entry contains:
 Validation: 
 
 
-If the user tries to submit a blank item, the top container in the project alerts the user to add a valid item (with an “alert”(red) error message under the input). 
-If the user successfully adds an item, the top container informs the user with a “success”(green) message.
+a.) If the user tries to submit a blank item, the top container in the project alerts the user to add a valid item (with an “alert”(red) error message under the input). 
+b.) If the user successfully adds an item, the top container informs the user with a “success”(green) message.
 
 
 Bonus part: 
 
-Each grocery item should have a price displayed, next to the name.
-There should be another(third) input for entering the price amount. The price should be saved with each item, when clicking the ‘Submit’ button.
+- Each grocery item should have a price displayed, next to the name. There should be another(third) input for entering the price amount. The price should be saved with each item, when clicking the ‘Submit’ button.
 
-The user should have an option to calculate the grocery budget amount. There should be a new field/input added at the top of the landing page (above all other inputs) to enter the main shopping budget, and a button next to it, with label "Calculate".
-
+- The user should have an option to calculate the grocery budget amount. There should be a new field/input added at the top of the landing page (above all other inputs) to enter the main shopping budget, and a button next to it, with label "Calculate".
 
 When this button is clicked, the amount of all grocery items should be subtracted from the main budget amount and a message displayed as a popup.
-if the result is greater than 0, display the amount that is left in the main budget.
+If the result is greater than 0, display the amount that is left in the main budget.
 If the result is less than 0, display a message indicating the amount that the user needs to add to the budget.
+
+## References
+
+The application was made for a Serbian company, which accepted my CV, where I entered the narrow selection circle, after which I had to do a technical task.
