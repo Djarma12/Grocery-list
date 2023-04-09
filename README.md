@@ -22,9 +22,9 @@ The objective of this task  is to create a grocery list that accepts an item and
 Notes:
 
 The first container has:
-One input for entering the name of the item
-One input for entering the quantity of the item  (default is 1)
-‘Submit’ button. When the user clicks on this button, the item is displayed in the second container and saved to the local storage. 
+- One input for entering the name of the item
+- One input for entering the quantity of the item  (default is 1)
+- ‘Submit’ button. When the user clicks on this button, the item is displayed in the second container and saved to the local storage. 
 
 
 The second container has:
