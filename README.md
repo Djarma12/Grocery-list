@@ -18,6 +18,7 @@ The objective of this task  is to create a grocery list that accepts an item and
 - HTML
 - CSS
 - JS
+- React (on another branch)
 
 Notes:
 
