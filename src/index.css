@@ -1,13 +1,72 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.container {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#grocery-form input {
+  margin-bottom: 10px;
+}
+
+input {
+  display: block;
+
+  border: 2px solid #ffa500;
+  border-radius: 3px;
+  outline: none;
+}
+
+input:focus {
+  border: 2px solid #ff7300;
+}
+
+#grocery-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  counter-reset: list-counter 0;
+}
+
+#grocery-list li {
+  display: grid;
+  grid-template-columns: min-content 1.5fr 0.8fr 1.4fr auto min-content;
+  justify-items: center;
+  gap: 1rem;
+  counter-increment: list-counter;
+}
+
+#grocery-list li::before {
+  content: counter(list-counter) ". ";
+}
+
+.btn {
+  display: block;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-inline: auto;
+  margin-top: 10px;
+}
+
+.edit-input {
+  margin-right: 10px;
+}
+
+.save-btn {
+  background-color: #ffa500;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: #ffa500;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background-color: #ff0000;
+  cursor: pointer;
 }
